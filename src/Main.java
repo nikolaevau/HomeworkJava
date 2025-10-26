@@ -1,13 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import Homework4.Car;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Создание автомобилей");
+        Car car1 = new Car("Kia Sportage", 2020);
+        Car car2 = new Car("BMW X6", 2024);
+        Car car3 = new Car("Volkswagen TRoc", 2021);
+
+        System.out.println("makeBebe первоначальный");
+        car1.makeBebe();
+        car2.makeBebe();
+        car3.makeBebe();
+
+
+//      Переопределение переменных
+        car1.setModel("Москвич 3");
+        car1.setYear(2023);
+
+        car2.setModel("Audi A7");
+        car2.setYear(2024);
+
+        System.out.println("makeBebe после переопределения переменных");
+        car1.makeBebe();
+        car2.makeBebe();
+        car3.makeBebe();
     }
 }
