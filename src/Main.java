@@ -26,3 +26,18 @@ public class Main {
         car3.makeBebe();
     }
 }
+
+//Домашнее задание 6. Массивы и строки
+
+public static void main(String[] args) {
+    String[] stringsArray = {"привет", "ПОКА", "гипербола"};
+
+    System.out.println(stringsArray[0].toUpperCase());
+    System.out.println(stringsArray[1].toLowerCase());
+
+    String hyperbola = stringsArray[2];
+    StringBuilder change = new StringBuilder(hyperbola);
+    change.setCharAt(1, 'О');
+    change.insert(3, ' ');
+    System.out.println((change));
+}
