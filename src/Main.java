@@ -5,6 +5,9 @@ import Homework7.employee.Manager;
 import Homework7.shape.Circle;
 import Homework7.shape.Rectangle;
 import Homework7.shape.Shape;
+import Homework8.Guitar;
+import Homework8.Music;
+import Homework8.Piano;
 
 import java.awt.*;
 
@@ -53,17 +56,23 @@ public class Main {
 //Домашнее задание 7
 //Employee
 public static void main() {
-  Homework7.employee.Employee manager = new Manager("Иван", 500000);
-  Homework7.employee.Developer developer = new Developer("Александр", 100000);
+//  Homework7.employee.Employee manager = new Manager("Иван", 500000);
+//  Homework7.employee.Developer developer = new Developer("Александр", 100000);
+//
+//  manager.work();
+//  developer.work();
+//
+//  //Shape
+//    Shape circle = new Circle();
+//    Shape rectangle = new Rectangle();
+//
+//    circle.draw();
+//    rectangle.draw();
 
-  manager.work();
-  developer.work();
-
-  //Shape
-    Shape circle = new Circle();
-    Shape rectangle = new Rectangle();
-
-    circle.draw();
-    rectangle.draw();
+// Домашнее задание 8
+Guitar guitar = new Guitar();
+Piano piano = new Piano();
+guitar.play(Music.StringsCount.GUITAR.getCount());
+piano.play(Music.StringsCount.PIANO.getCount());
 
 }
