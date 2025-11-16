@@ -1,4 +1,12 @@
 import Homework4.Car;
+import Homework7.employee.Developer;
+import Homework7.employee.Employee;
+import Homework7.employee.Manager;
+import Homework7.shape.Circle;
+import Homework7.shape.Rectangle;
+import Homework7.shape.Shape;
+
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,15 +37,33 @@ public class Main {
 
 //Домашнее задание 6. Массивы и строки
 
-public static void main(String[] args) {
-    String[] stringsArray = {"привет", "ПОКА", "гипербола"};
+//public static void main(String[] args) {
+//    String[] stringsArray = {"привет", "ПОКА", "гипербола"};
+//
+//    System.out.println(stringsArray[0].toUpperCase());
+//    System.out.println(stringsArray[1].toLowerCase());
+//
+//    String hyperbola = stringsArray[2];
+//    StringBuilder change = new StringBuilder(hyperbola);
+//    change.setCharAt(1, 'О');
+//    change.insert(3, ' ');
+//    System.out.println((change));
+//}
 
-    System.out.println(stringsArray[0].toUpperCase());
-    System.out.println(stringsArray[1].toLowerCase());
+//Домашнее задание 7
+//Employee
+public static void main() {
+  Homework7.employee.Employee manager = new Manager("Иван", 500000);
+  Homework7.employee.Developer developer = new Developer("Александр", 100000);
 
-    String hyperbola = stringsArray[2];
-    StringBuilder change = new StringBuilder(hyperbola);
-    change.setCharAt(1, 'О');
-    change.insert(3, ' ');
-    System.out.println((change));
+  manager.work();
+  developer.work();
+
+  //Shape
+    Shape circle = new Circle();
+    Shape rectangle = new Rectangle();
+
+    circle.draw();
+    rectangle.draw();
+
 }
